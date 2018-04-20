@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="#include  #include &amp;lt;msgpack.hpp&amp;gt; using namespace std;namespace mp=msgpack;class message {    private:        int type_;        string filename_;        char data_;        void encode(){">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1st test">
+<meta property="og:url" content="http://yoursite.com/2018/04/20/1st-test/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#include  #include &amp;lt;msgpack.hpp&amp;gt; using namespace std;namespace mp=msgpack;class message {    private:        int type_;        string filename_;        char data_;        void encode(){">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-20T04:05:05.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="1st test">
+<meta name="twitter:description" content="#include  #include &amp;lt;msgpack.hpp&amp;gt; using namespace std;namespace mp=msgpack;class message {    private:        int type_;        string filename_;        char data_;        void encode(){">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/20/1st-test/"/>
 
 
 
 
 
-  <title>归档 | Hexo</title>
+  <title>1st test | Hexo</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,148 +218,166 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/20/1st-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">1st test</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-20T12:04:42+08:00">
+                2018-04-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/20/vim-ex-md/" itemprop="url">
-              
-                <span itemprop="name">vim ex mode to delete a matched line</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-20T14:40:27+08:00"
-              content="2018-04-20" >
-          04-20
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/20/1st-test/" itemprop="url">
-              
-                <span itemprop="name">1st test</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-20T12:04:42+08:00"
-              content="2018-04-20" >
-          04-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <p>#include <iostream></iostream></p>
+<p>#include &lt;msgpack.hpp&gt;</p>
+<p>using namespace std;<br>namespace mp=msgpack;<br>class message {<br>    private:<br>        int type_;<br>        string filename_;<br>        char<em> data_;<br>        void encode(){<br>            mp::sbuffer buf;<br>            mp::pack(buf,</em>this);<br>            data_ = new char[buf.size()+5];<br>            sprintf(data_,”%4d%s”,buf.size(),buf.data());<br>        }<br>        void decode(){<br>            char header[5];<br>            strncpy(header,data_,4);<br>            auto size = atoi(header);<br>            mp::object_handle hdl =<br>                mp::unpack(data_+4,size);<br>            <em>this = hdl.get().as<message>();<br>        }<br>    public:<br>        message():data_(NULL){}<br>        message(int type,string filename)<br>            :type_(type),filename_(filename),data_(NULL){}<br>        message(char</message></em> data):data_(data){<br>            decode();<br>        }</p>
+<pre><code>const int type(){return type_;}
+const string file(){return filename_;}
+char* data(){
+    if (!data_)
+        encode();
+    return data_;
+}
 
-        
-        
+MSGPACK_DEFINE(type_,filename_);
+</code></pre><p>};</p>
+<p>/*<br>int main(){<br>    message m1(2,”/nfs/sjord9.home/hutan/thk/aaa”);</p>
+<pre><code>char* data = m1.data();
 
-        
+message m2(data);
+cout&lt;&lt;m2.type()&lt;&lt;endl;
+cout&lt;&lt;m2.file()&lt;&lt;endl;
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/19/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-19T16:12:49+08:00"
-              content="2018-04-19" >
-          04-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+return 0;
+</code></pre><p>}<br>*/</p>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/19/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/20/vim-ex-md/" rel="prev" title="vim ex mode to delete a matched line">
+                vim ex mode to delete a matched line <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -363,6 +385,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -559,6 +585,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
